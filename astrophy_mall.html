@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/83387431ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/Bootstrap_5_0_1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/sass/style.css" />
+    <link rel="stylesheet" href="src/css/sass/res.css" />
+    <link rel="stylesheet" href="src/css/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .slick-slide {
+            padding: 0 8px;
+        }
+    </style>
+</head>
+
+<body style="background: #f1f7fd;">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav_bg shadow">
+        <div class="container-fluid mobile_menu_new">
+            <div class="row mobile_menu_new_2">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="src/img/logo.png" alt="" /></a>
+                </div>
+                <div class="col-6 nav_mobile">
+                    <a class="nav_icon_btn d-block d-xxl-none d-xl-none d-lg-none" href="profile.html"><i
+                            class="far fa-user"></i></a>
+                    <a class="
+                      nav-link nav_icon_btn
+                      d-block d-xxl-none d-xl-none d-lg-none
+                    " href="cart.html"><i class="fas fa-cart-plus"></i></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars mobile_menu"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse mobile_nav" id="main_nav">
+                <ul class="navbar-nav nav_link_ul">
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link nav_link" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="nav_text">Services </span>
+                            <span class="nav_icon"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuButton1">
+                            <div class="dropdown-list-items">
+                                <div class="anm_down">
+                                    <p class="dropdown-item dropdown_menu_title">
+                                        <span>Astrology & Reading </span>
+                                    </p>
+                                    <a class="dropdown-item" href="service.html">Tarot Reading </a>
+                                    <a class="dropdown-item" href="service.html">Numerology </a>
+                                    <a class="dropdown-item" href="service.html">Astrology</a>
+                                    <a class="dropdown-item" href="service.html">Pendulum </a>
+                                    <a class="dropdown-item" href="service.html">Mind Reading </a>
+                                    <a class="dropdown-item" href="service.html">Psychic Reading </a>
+                                    <a class="dropdown-item" href="service.html">Palm Reading </a>
+                                    <a class="dropdown-item" href="service.html">Picture Reading </a>
+                                </div>
+                                <div class="anm_down">
+                                    <p class="dropdown-item dropdown_menu_title">
+                                        <span>Spell Casting</span>
+                                    </p>
+                                    <a class="dropdown-item" href="service.html">Love Spell </a>
+                                    <a class="dropdown-item" href="service.html">Protection Spell </a>
+                                    <a class="dropdown-item" href="service.html">Cleansing Spell </a>
+                                    <a class="dropdown-item" href="service.html">Custom Spell </a>
+                                    <a class="dropdown-item" href="service.html">Obsession Spell </a>
+                                    <a class="dropdown-item" href="service.html">Love Binding Spell </a><a
+                                        class="dropdown-item" href="service.html">Career Spell </a>
+                                    <a class="dropdown-item" href="service.html">Finance Spell </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="astrophy_mall.html">Astrophy Mall </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="blog.html">blogs </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="#">support </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="#">become a seller</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="nav_input_div_top">
+                            <div class="nav_input_div">
+                                <input type="text" class="form-control nav_input_div_input" />
+                                <button class="btn nav_btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-xxl-block d-xl-block d-lg-block">
+                        <a class="nav-link nav_icon_btn" href="profile.html"><i class="far fa-user"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-xxl-block d-xl-block d-lg-block">
+                        <a class="nav-link nav_icon_btn" href="cart.html"><i class="fas fa-cart-plus"></i> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn_2" href="#">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- page Suggested -->
+    <section class="suggested_section">
+        <div class="d-none d-xxl-block d-xl-block d-lg-block d-md-block">
+            <ul>
+                <li class="suggested_li">Suggested:</li>
+                <li>
+                    <div class="suggested_btn_div">
+                        <button class="btn">Love Spell</button>
+                        <button class="btn">Wish Spell</button>
+                        <button class="btn">Money Spell</button>
+                        <button class="btn">Spell Caster</button>
+                        <button class="btn">Protection Spell</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class=" ">
+            <div class=" d-block d-xxl-none d-xl-none d-lg-none d-md-none">
+                <div class="suggested_li">Suggested</div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="suggested_btn_div">
+                            <button class="btn">Love Spell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="suggested_btn_div">
+                            <button class="btn">Wish Spell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="suggested_btn_div">
+                            <button class="btn">Money Spell</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="suggested_btn_div">
+                            <button class="btn"> Spell Caster</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="suggested_btn_div">
+                            <button class="btn">Protection Spell</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- page Suggested end -->
+    <!-- page select  -->
+    <section class="section_page_select_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-5 col-sm-5 col-5">
+                    <div class=" d-block d-xxl-none d-xl-none d-lg-none">
+                        <button class="btn filter_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                class="fas fa-sort-amount-up"></i> Filter</button>
+                    </div>
+                    <div class=" d-none d-xxl-block d-xl-block d-lg-block">
+                        <div class="page_select">
+                            <div class="page_select_div">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> Delivery</option>
+                                    <option value="1">Free Delivery</option>
+                                    <option value="2">Ready to dispatch</option>
+                                    <option value="3">1 business day</option>
+                                </select>
+                            </div>
+                            <div class="page_select_div">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> Rating</option>
+                                    <option value="1">Hight to low</option>
+                                    <option value="2">low to high</option>
+                                </select>
+                            </div>
+                            <div class="page_select_div">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> Price</option>
+                                    <option value="1">$ 0 - $ 50</option>
+                                    <option value="2">$ 51 - $ 100</option>
+                                    <option value="3">$ 101 - $ 150</option>
+                                    <option value="3">more then $ 151</option>
+                                </select>
+                            </div>
+                            <div class="page_select_div">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected> Sorting</option>
+                                    <option value="1">Total Sales : Low to High</option>
+                                    <option value="2">Total Sales : High to Low</option>
+                                    <option value="3">Price : High to Low</option>
+                                    <option value="3">Price : Low to High</option>
+                                    <option value="3">Top Customer Reviews</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-7 col-sm-7 col-7"">
+                    <div class=" page_select page_select_div_2">
+                    <div class="nav_input_div_top">
+                        <div class="nav_input_div page_select_input_div">
+                            <input type="text" class="form-control nav_input_div_input" />
+                            <button class="btn nav_btn_2">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- page select end -->
+    <!-- our products -->
+    <section class="container spell_m">
+        <div class="text-capitalize d-flex justify-content-center">
+            <div class="text-center title_all">
+                <p>Product</p>
+                <div class="title_all_line">
+                    <div></div>
+                </div>
+                <h3>Product for<span> Sell</span></h3>
+            </div>
+        </div>
+        <div class="row gy-5">
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/1.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/2.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/3.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/4.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/5.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/6.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/7.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
+                <a href="product-details.html">
+                    <div class="card our_products_body shadow">
+                        <div class="our_products_img" style="background-image: url('src/img/our_products/8.png')"></div>
+                        <div class="card-body">
+                            <div class="our_products_body_row">
+                                <div class="our_products_body_row_title">
+                                    <h3>Pared Meru Shri Shree Yenta</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 our_products_body_col_text">
+                                        <div>
+                                            <p class="our_products_price">$ 199.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div>
+                                            <ul class="our_products_body_col_text_2">
+                                                <li class="our_products_li">
+                                                    <div>
+                                                        <div class="star_img" style="
+                                                        background-image: url('src/img/our_products/star.png');
+                                                      "></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span>4.5/5</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our_products_body_btn">
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn2" href="product-details.html">Buy Now</a>
+                                </div>
+                                <div class="our_products_body_btn_iner">
+                                    <a class="btn our_products_btn" href="#"><i class="fas fa-cart-plus"></i>
+                                        <span>Add To Cart</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- our products end -->
+    <!-- footer  -->
+    <footer class="text-center text-lg-start mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+        <!-- Grid container -->
+        <div class="footer_bg">
+            <div class="container text-center pt-5 pb-3">
+                <div class="footer_store">
+                    <a href="#"><img src="src/img/play_store.png" alt="" /></a>
+                    <a href="#"><img src="src/img/app_store.png" alt="" /></a>
+                </div>
+                <h1 class="text-capitalize text-white">Astrophy</h1>
+                <p class="footer_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    consequatur corrupti culpa natus est aspernatur vitae, odio quasi.
+                    Officiis aperiam voluptas repellat fugit eligendi dignissimos,
+                    numquam quisquam perferendis quos culpa amet officia aspernatur cum
+                    tenetur assumenda nulla, eveniet, quas dicta.
+                </p>
+            </div>
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Quick Links
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="index.html" class="footer_link">Achivements</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" class="footer_link">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html" class="footer_link">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html" class="footer_link">FAQ's</a>
+                                    </li>
+                                    <li>
+                                        <a href="site-map.html" class="footer_link">SiteMap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="blog.html" class="footer_link">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html" class="footer_link">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="cookies-policy.html" class="footer_link">Cookies Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="return-policy.html" class="footer_link">Return Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="condition-policy.html" class="footer_link">Condition of Use & Sell
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                My Links
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="astrophy_mall.html" class="footer_link">AstrophyMall</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="footer_link">More Seller </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html" class="footer_link">Blog </a>
+                                    </li>
+                                    <li>
+                                        <a href="report-problem.html" class="footer_link">Report a problem </a>
+                                    </li>
+                                    <li>
+                                        <a href="disclaimer.html" class="footer_link">Disclaimer </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="footer_link">Became A Seller</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Services We Offer
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="service.html" class="footer_link">Tarot Reading </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Numerology</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Astrology </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Pendulum </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Mind Reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Psychic reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Palm Reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Picture Reading </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="service.html" class="footer_link">Love Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Protection Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Cleansing Spell </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="service.html" class="footer_link">Custom Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Obsession Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Love Binding Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Career Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Finance Spell </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Subscribe Us
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="footer_input">
+                            <div class="d-flex">
+                                <input type="email" class="form-control" placeholder="Email Address" />
+                                <button class="btn">Send</button>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="text-capitalize text-white fw-bold socal_p">
+                                        Follow US:-
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex">
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-facebook-square"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-pinterest-square"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Grid container -->
+        <div class="footer_hr_2">
+            <hr />
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 footer_bg text-white">
+            © 2021 Copyright:
+            <a class="footer_link" href="#">Astrology</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="page_select">
+                                    <div class="page_select_div">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> Delivery</option>
+                                            <option value="1">Free Delivery</option>
+                                            <option value="2">Ready to dispatch</option>
+                                            <option value="3">1 business day</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="page_select">
+                                    <div class="page_select_div">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> Rating</option>
+                                            <option value="1">Hight to low</option>
+                                            <option value="2">low to high</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="page_select">
+                                    <div class="page_select_div">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> Price</option>
+                                            <option value="1">$ 0 - $ 50</option>
+                                            <option value="2">$ 51 - $ 100</option>
+                                            <option value="3">$ 101 - $ 150</option>
+                                            <option value="3">more then $ 151</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="page_select">
+                                    <div class="page_select_div">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> Sorting</option>
+                                            <option value="1">Total Sales : Low to High</option>
+                                            <option value="2">Total Sales : High to Low</option>
+                                            <option value="3">Price : High to Low</option>
+                                            <option value="3">Price : Low to High</option>
+                                            <option value="3">Top Customer Reviews</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" text-center">
+                            <button type="button" class="btn btn_1" data-bs-dismiss="modal">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="src/css/Bootstrap_5_0_1/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/my.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            stagePadding: 50,
+            autoWidth: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

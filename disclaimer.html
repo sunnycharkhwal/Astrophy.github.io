@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/83387431ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/css/Bootstrap_5_0_1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/sass/style.css" />
+    <link rel="stylesheet" href="src/css/sass/res.css" />
+    <link rel="stylesheet" href="src/css/slick.css" />
+    <style>
+        .slick-slide {
+            padding: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav_bg shadow">
+        <div class="container-fluid mobile_menu_new">
+            <div class="row mobile_menu_new_2">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="src/img/logo.png" alt="" /></a>
+                </div>
+                <div class="col-6 nav_mobile">
+                    <a class="nav_icon_btn d-block d-xxl-none d-xl-none d-lg-none" href="profile.html"><i
+                            class="far fa-user"></i></a>
+                    <a class="
+                  nav-link nav_icon_btn
+                  d-block d-xxl-none d-xl-none d-lg-none
+                " href="cart.html"><i class="fas fa-cart-plus"></i></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars mobile_menu"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse mobile_nav" id="main_nav">
+                <ul class="navbar-nav nav_link_ul">
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link nav_link" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="nav_text">Services </span>
+                            <span class="nav_icon"><i class="fas fa-angle-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu pt-0" aria-labelledby="dropdownMenuButton1">
+                            <div class="dropdown-list-items">
+                                <div class="anm_down">
+                                    <p class="dropdown-item dropdown_menu_title">
+                                        <span>Astrology & Reading </span>
+                                    </p>
+                                    <a class="dropdown-item" href="service.html">Tarot Reading </a>
+                                    <a class="dropdown-item" href="service.html">Numerology </a>
+                                    <a class="dropdown-item" href="service.html">Astrology</a>
+                                    <a class="dropdown-item" href="service.html">Pendulum </a>
+                                    <a class="dropdown-item" href="service.html">Mind Reading </a>
+                                    <a class="dropdown-item" href="service.html">Psychic Reading </a>
+                                    <a class="dropdown-item" href="service.html">Palm Reading </a>
+                                    <a class="dropdown-item" href="service.html">Picture Reading </a>
+                                </div>
+                                <div class="anm_down">
+                                    <p class="dropdown-item dropdown_menu_title">
+                                        <span>Spell Casting</span>
+                                    </p>
+                                    <a class="dropdown-item" href="service.html">Love Spell </a>
+                                    <a class="dropdown-item" href="service.html">Protection Spell </a>
+                                    <a class="dropdown-item" href="service.html">Cleansing Spell </a>
+                                    <a class="dropdown-item" href="service.html">Custom Spell </a>
+                                    <a class="dropdown-item" href="service.html">Obsession Spell </a>
+                                    <a class="dropdown-item" href="service.html">Love Binding Spell </a><a
+                                        class="dropdown-item" href="service.html">Career Spell </a>
+                                    <a class="dropdown-item" href="service.html">Finance Spell </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="astrophy_mall.html">Astrophy Mall </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="blog.html">blogs </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="#">support </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link nav_link" href="#">become a seller</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="nav_input_div_top">
+                            <div class="nav_input_div">
+                                <input type="text" class="form-control nav_input_div_input" />
+                                <button class="btn nav_btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-xxl-block d-xl-block d-lg-block">
+                        <a class="nav-link nav_icon_btn" href="profile.html"><i class="far fa-user"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-xxl-block d-xl-block d-lg-block">
+                        <a class="nav-link nav_icon_btn" href="cart.html"><i class="fas fa-cart-plus"></i> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn_2" href="#">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+    <!-- page top -->
+    <section class="page_top_section" style="background-image: url('src/img/Background.jpg');">
+        <div class="page_top">
+            <div class="page_top_title">
+                <h3>Disclaimer</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores?
+                    <br> Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- page top end -->
+    <!-- page -->
+    <section class="container ">
+        <div>
+            <div class="terms">
+                <h3>Condition Of Use & Sell :</h3>
+                <p>
+                    It seems that only fragments of the original text remain in the
+                    Lorem Ipsum texts used today. One may speculate that over the course
+                    of time certain letters were added or deleted at various positions
+                    within the text.
+                </p>
+                <p>
+                    In the 1960s, the text suddenly became known beyond the professional
+                    circle of typesetters and layout designers when it was used for
+                    Letraset sheets (adhesive letters on transparent film, popular until
+                    the 1980s) Versions of the text were subsequently included in DTP
+                    programmes such as PageMaker etc.
+                </p>
+                <p>
+                    There is now an abundance of readable dummy texts. These are usually
+                    used when a text is required purely to fill a space. These
+                    alternatives to the classic Lorem Ipsum texts are often amusing and
+                    tell short, funny or nonsensical stories.
+                </p>
+                <h3>We use your information to :</h3>
+                <ul>
+                    <li>
+                        <span><i class="far fa-hand-point-right"></i></span>
+                        Digital Marketing Solutions for Tomorrow
+                    </li>
+                    <li>
+                        <span><i class="far fa-hand-point-right"></i></span>
+                        Our Talented & Experienced Marketing Agency
+                    </li>
+                    <li>
+                        <span><i class="far fa-hand-point-right"></i></span>
+                        Create your own skin to match your brand
+                    </li>
+                    <li>
+                        <span><i class="far fa-hand-point-right"></i></span>
+                        Our Talented & Experienced Marketing Agency
+                    </li>
+                    <li>
+                        <span><i class="far fa-hand-point-right"></i></span>
+                        Create your own skin to match your brand
+                    </li>
+                </ul>
+                <h3>Information Provided Voluntarily :</h3>
+                <p>
+                    In the 1960s, the text suddenly became known beyond the professional
+                    circle of typesetters and layout designers when it was used for
+                    Letraset sheets (adhesive letters on transparent film, popular until
+                    the 1980s) Versions of the text were subsequently included in DTP
+                    programmes such as PageMaker etc.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam repudiandae fugit nulla
+                    doloribus dolore temporibus officia, tempora minus, dicta expedita voluptatem enim eaque corrupti
+                    velit illum nihil explicabo. Error numquam cumque aliquid modi veniam culpa aut totam provident
+                    dolorem voluptates est adipisci nulla, corrupti ipsa a sed deleniti delectus. Quisquam voluptatibus
+                    rerum molestias quia officiis commodi, eaque quos repellendus alias temporibus nobis quis odit, et
+                    quod consequatur, odio totam accusamus. Autem officiis sed placeat. Vel maxime pariatur porro ullam
+                    ut numquam exercitationem est tempora aliquid ratione, commodi dolor cupiditate nobis nostrum
+                    doloremque expedita repellendus beatae sed laboriosam magni sint!
+                </p>
+                <h3>Information Provided Voluntarily :</h3>
+                <p>
+                    In the 1960s, the text suddenly became known beyond the professional
+                    circle of typesetters and layout designers when it was used for
+                    Letraset sheets (adhesive letters on transparent film, popular until
+                    the 1980s) Versions of the text were subsequently included in DTP
+                    programmes such as PageMaker etc.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsam repudiandae fugit nulla
+                    doloribus dolore temporibus officia, tempora minus, dicta expedita voluptatem enim eaque corrupti
+                    velit illum nihil explicabo. Error numquam cumque aliquid modi veniam culpa aut totam provident
+                    dolorem voluptates est adipisci nulla, corrupti ipsa a sed deleniti delectus. Quisquam voluptatibus
+                    rerum molestias quia officiis commodi, eaque quos repellendus alias temporibus nobis quis odit, et
+                    quod consequatur, odio totam accusamus. Autem officiis sed placeat. Vel maxime pariatur porro ullam
+                    ut numquam exercitationem est tempora aliquid ratione, commodi dolor cupiditate nobis nostrum
+                    doloremque expedita repellendus beatae sed laboriosam magni sint!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- page end -->
+
+
+    <!-- Providers -->
+    <!-- footer  -->
+    <footer class="text-center text-lg-start mt-xxl-5 mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+        <!-- Grid container -->
+        <div class="footer_bg">
+            <div class="container text-center pt-5 pb-3">
+                <div class="footer_store">
+                    <a href="#"><img src="src/img/play_store.png" alt="" /></a>
+                    <a href="#"><img src="src/img/app_store.png" alt="" /></a>
+                </div>
+                <h1 class="text-capitalize text-white">Astrophy</h1>
+                <p class="footer_text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                    consequatur corrupti culpa natus est aspernatur vitae, odio quasi.
+                    Officiis aperiam voluptas repellat fugit eligendi dignissimos,
+                    numquam quisquam perferendis quos culpa amet officia aspernatur cum
+                    tenetur assumenda nulla, eveniet, quas dicta.
+                </p>
+            </div>
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Quick Links
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="index.html" class="footer_link">Achivements</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" class="footer_link">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html" class="footer_link">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html" class="footer_link">FAQ's</a>
+                                    </li>
+                                    <li>
+                                        <a href="site-map.html" class="footer_link">SiteMap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="blog.html" class="footer_link">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.html" class="footer_link">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="cookies-policy.html" class="footer_link">Cookies Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="return-policy.html" class="footer_link">Return Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="condition-policy.html" class="footer_link">Condition of Use & Sell
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                My Links
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="astrophy_mall.html" class="footer_link">AstrophyMall</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="footer_link">More Seller </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html" class="footer_link">Blog </a>
+                                    </li>
+                                    <li>
+                                        <a href="report-problem.html" class="footer_link">Report a problem </a>
+                                    </li>
+                                    <li>
+                                        <a href="disclaimer.html" class="footer_link">Disclaimer </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="footer_link">Became A Seller</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Services We Offer
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="service.html" class="footer_link">Tarot Reading </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Numerology</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Astrology </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Pendulum </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Mind Reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Psychic reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Palm Reading</a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Picture Reading </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xx-12 col-xl-12 col-lg-12 col-sm-6 col-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="service.html" class="footer_link">Love Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Protection Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Cleansing Spell </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="service.html" class="footer_link">Custom Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Obsession Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Love Binding Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Career Spell </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html" class="footer_link">Finance Spell </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="
+                    col-xxl-3
+                    col-xl-3
+                    col-lg-3
+                    col-md-6
+                    col-sm-12
+                    col-xs-12
+                    col-md-6
+                    mb-4 mb-md-0
+                  ">
+                        <div>
+                            <h5 class="text-uppercase text-white fw-bolder mb-3 footer_title">
+                                Subscribe Us
+                            </h5>
+                            <div class="footer_hr">
+                                <hr />
+                            </div>
+                        </div>
+                        <div class="footer_input">
+                            <div class="d-flex">
+                                <input type="email" class="form-control" placeholder="Email Address" />
+                                <button class="btn">Send</button>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="text-capitalize text-white fw-bold socal_p">
+                                        Follow US:-
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex">
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-facebook-square"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-pinterest-square"></i></a>
+                                        </div>
+                                        <div class="m-auto">
+                                            <a class="socal_link" href="#"><i class="fab fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Grid container -->
+        <div class="footer_hr_2">
+            <hr />
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 footer_bg text-white">
+            © 2021 Copyright:
+            <a class="footer_link" href="#">Astrology</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+
+    <!-- script -->
+    <script src="src/css/Bootstrap_5_0_1/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/my.js"></script>
+    <script src="src/js/slick.min.js"></script>
+</body>
+
+</html>
